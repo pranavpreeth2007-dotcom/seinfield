@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Apt 5A — A Seinfeld-inspired Three.js Set</title>
+<link rel="stylesheet" href="style.css" />
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.165.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.165.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="hud">
+    <div id="title">APT&nbsp;5A</div>
+    <div id="modes">
+      <button id="btnWalk" class="active">Walk Mode</button>
+      <button id="btnInspect">Inspect Mode</button>
+    </div>
+    <div id="hint">
+      <b>Walk:</b> click to lock pointer · WASD move · Shift run · Esc release<br/>
+      <b>Inspect:</b> drag-orbit · scroll zoom · right-drag pan
+    </div>
+  </div>
+
+  <div id="overlay">
+    <h1>Welcome to Jerry's Apartment</h1>
+    <p>Click anywhere to enter Walk Mode.</p>
+    <p class="sub">A faithful-as-possible recreation of the filmed TV set — impossible architecture and all.</p>
+  </div>
+
+  <div id="crosshair">+</div>
+
+  <canvas id="c"></canvas>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
